@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>ICT 10 - Periodic Table Information Finder</title>
+</head>
+<body>
+    <div class="outer-card">
+        <h1>Non-metal Elements</h1>
+        <p class="subtitle">Periodic Table Information Finder</p>
+        
+        <p class="instructions">
+            <b>Instructions:</b> Enter the symbol of a non-metal element (Ex: H, S, O, Ne, Fe)
+        </p>
+
+        <div class="inner-card">
+            <label class="input-label" for="symbol_input"><b>🔍 Element Symbol:</b></label>
+            <input type="text" id="symbol_input" placeholder="Search">
+
+            <button py-click="check_element">Check Details</button>
+
+            <div class="result-label"><b>! Results:</b></div>
+            <div id="output1"></div>
+        </div>
+    </div>
+
+      <!-- Bottom Footer Bar -->
+    <footer>
+        © 2026 ICT Club • Drill 2 • 2nd Quarter
+    </footer>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
